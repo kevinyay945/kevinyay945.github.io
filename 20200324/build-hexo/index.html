@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"kevinyay945.github.io","root":"/","scheme":"Pisces","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="這是在建立這個blog的時候遇到的問題，在這邊記錄下來，怕之後忘記使用環境: window 10 環境架設">
+<meta property="og:type" content="article">
+<meta property="og:title" content="build hexo">
+<meta property="og:url" content="https://kevinyay945.github.io/20200324/build-hexo/index.html">
+<meta property="og:site_name" content="小小工程師的第二個腦">
+<meta property="og:description" content="這是在建立這個blog的時候遇到的問題，在這邊記錄下來，怕之後忘記使用環境: window 10 環境架設">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2020-03-24T08:04:51.000Z">
+<meta property="article:modified_time" content="2020-03-25T08:04:51.000Z">
+<meta property="article:author" content="kevinyay945">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://kevinyay945.github.io/20200324/build-hexo/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>build hexo | 小小工程師的第二個腦</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小小工程師的第二個腦</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">人的大腦應該拿來裝更多有意義的事物</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>文章</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200324/build-hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kevinyay945">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小小工程師的第二個腦">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          build hexo
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-03-24 16:04:51" itemprop="dateCreated datePublished" datetime="2020-03-24T16:04:51+08:00">2020-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2020-03-25 16:04:51" itemprop="dateModified" datetime="2020-03-25T16:04:51+08:00">2020-03-25</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>這是在建立這個blog的時候遇到的問題，在這邊記錄下來，怕之後忘記<br>使用環境: window 10</p>
+<h1 id="環境架設"><a href="#環境架設" class="headerlink" title="環境架設"></a>環境架設</h1><a id="more"></a>
+<ul>
+<li>安裝node.js(<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuLw==" title="https://nodejs.org/en/">https://nodejs.org/en/<i class="fa fa-external-link"></i></span>)<ul>
+<li>建議安裝LTS版本，比較穩定</li>
+</ul>
+</li>
+<li>安裝git(<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">https://git-scm.com/<i class="fa fa-external-link"></i></span>)<ul>
+<li>建議安裝時全部都照預設值安裝，比較不會有問題</li>
+<li>在你希望的資料夾中執行以下命令(在你想要存放hexo的資料夾按下shift並按下右鍵，選取cmd或是powershell)<br>  ps: 以下的blog是資料夾名稱，可以改成任何你想要的名字  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+  這時進入localhost:4000，就可以看到你的blog了</li>
+</ul>
+</li>
+</ul>
+<h1 id="部屬到github"><a href="#部屬到github" class="headerlink" title="部屬到github"></a>部屬到github</h1><ul>
+<li>申請一個github帳號</li>
+<li>新建一個跟你使用者一樣名字，後面帶有.gitbub.io的Repositories<ul>
+<li>如果你的名字是kevinyay945，那新建Repositories的時候就將名字設定成kevinyay945.github.io</li>
+<li>並把他設定成public</li>
+</ul>
+</li>
+<li>修改hexo的_config.yaml，並修改以下配置(使用ctrl+F)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:kevinyay945&#x2F;kevinyay945.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li>安裝hexo部屬插件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure></li>
+<li>安裝完後執行以下指令即可部屬完成(若出現問題可以查看下方問題解法)<ul>
+<li>hexo clean 清理缓存</li>
+<li>hexo generate/hexo g 本地生成</li>
+<li>hexo deploy/hexo d 部署到远程仓库</li>
+<li>或者使用hexo d -g直接部署</li>
+</ul>
+</li>
+<li>若部屬成功，可以到kevinyay945.github.io查看你的網頁了(github的page更新最慢會到30分鐘，如果點下去是404error，等個幾分鐘再重新看看)</li>
+</ul>
+<h1 id="遇到的問題"><a href="#遇到的問題" class="headerlink" title="遇到的問題"></a>遇到的問題</h1><h2 id="TOC顯示有誤"><a href="#TOC顯示有誤" class="headerlink" title="TOC顯示有誤"></a>TOC顯示有誤</h2><p>在文章內加入javascript的code，並標註他的語言是javascript，網頁側邊的TOC顯示即會失效<br>目前作法是<br>將hexo-toc移除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm remove hexo-toc --save</span><br></pre></td></tr></table></figure>
+<p>再將md中撰寫code的欄位格式從```改成swig的語法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">錯誤的</span><br><span class="line">&#96;&#96;&#96;javascript </span><br><span class="line">&#96;&#96;&#96;</span><br><span class="line">可以運作的</span><br><span class="line">\&#123;\% codeblock lang:javascript  \%\&#125;</span><br><span class="line"></span><br><span class="line">\&#123;\% endcodeblock \%\&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="首頁文章顯示正常，文章內全空白"><a href="#首頁文章顯示正常，文章內全空白" class="headerlink" title="首頁文章顯示正常，文章內全空白"></a>首頁文章顯示正常，文章內全空白</h2><p>因為next有載入動畫，會影響到文章的輸出，將它關掉即可</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">motion:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>參考網址<br><span class="exturl" data-url="aHR0cHM6Ly96ZW5yZWFsLmdpdGh1Yi5pby9wb3N0cy81MTUxNy8=" title="https://zenreal.github.io/posts/51517/">https://zenreal.github.io/posts/51517/<i class="fa fa-external-link"></i></span></p>
+<h2 id="git-無ssh認證"><a href="#git-無ssh認證" class="headerlink" title="git 無ssh認證"></a>git 無ssh認證</h2><p>參考網址:<br><span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vZ2l0aHViL2F1dGhlbnRpY2F0aW5nLXRvLWdpdGh1Yi9nZW5lcmF0aW5nLWEtbmV3LXNzaC1rZXktYW5kLWFkZGluZy1pdC10by10aGUtc3NoLWFnZW50" title="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent<i class="fa fa-external-link"></i></span></p>
+<h2 id="hexo-image-asset圖片顯示有誤"><a href="#hexo-image-asset圖片顯示有誤" class="headerlink" title="hexo image asset圖片顯示有誤"></a>hexo image asset圖片顯示有誤</h2><p>因為我的網址是.io結尾，導致插件解析有問題</p>
+<p>修改第24行</p>
+<figure class="highlight javascript"><figcaption><span>/node_modules/hexo-asset-image/index.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="regexp">/.*\/index\.html$/</span>.test(link)) &#123;</span><br><span class="line">  <span class="comment">// when permalink is end with index.html, for example 2019/02/20/xxtitle/index.html</span></span><br><span class="line">  <span class="comment">// image in xxtitle/ will go to xxtitle/index/</span></span><br><span class="line">  appendLink = <span class="string">'index/'</span>;</span><br><span class="line">  <span class="keyword">var</span> endPos = link.lastIndexOf(<span class="string">'/'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">// var endPos = link.lastIndexOf('.'); //此行刪除 改成下面這行</span></span><br><span class="line">  <span class="keyword">var</span> endPos = link.length<span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line">link = link.substring(beginPos, endPos) + <span class="string">'/'</span> + appendLink;</span><br></pre></td></tr></table></figure>
+<p>修改後的檔案<br><a href="hexo-asset-image.txt">hexo-asset-image</a><br>參考網址<br><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3hjb2RlYnVpbGQvaGV4by1hc3NldC1pbWFnZS9pc3N1ZXMvNDc=" title="https://github.com/xcodebuild/hexo-asset-image/issues/47">https://github.com/xcodebuild/hexo-asset-image/issues/47<i class="fa fa-external-link"></i></span></p>
+<h1 id="使用套件"><a href="#使用套件" class="headerlink" title="使用套件"></a>使用套件</h1><h2 id="hot-reload"><a href="#hot-reload" class="headerlink" title="hot reload"></a>hot reload</h2><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLWJyb3dzZXJzeW5j" title="https://github.com/hexojs/hexo-browsersync">https://github.com/hexojs/hexo-browsersync<i class="fa fa-external-link"></i></span></p>
+<p>參考網址:<br><span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vZ2l0aHViL2F1dGhlbnRpY2F0aW5nLXRvLWdpdGh1Yi9jaGVja2luZy1mb3ItZXhpc3Rpbmctc3NoLWtleXM=" title="https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys">https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly90cnUteHUuZ2l0aHViLmlvLzIwMTkvMDUvMTAvaGV4byVFNiU5MCVBRCVFNSVCQiVCQSVFNSU4RCU5QSVFNSVBRSVBMiVFOCVCOCVBOSVFNSU5RCU5MS8=" title="https://tru-xu.github.io/2019/05/10/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91/">https://tru-xu.github.io/2019/05/10/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91/<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cuemRhaW90LmNvbS9MaW51eC8lRTUlOEQlOUElRTUlQUUlQTIlRTYlOTAlQUQlRTUlQkIlQkEvd2luZG93cyVFNCVCOCU4QiVFNCVCRCVCRiVFNyU5NCVBOGhleG8lRTYlOTAlQUQlRTUlQkIlQkElRTUlOEQlOUElRTUlQUUlQTIv" title="https://www.zdaiot.com/Linux/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/windows%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">https://www.zdaiot.com/Linux/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/windows%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9wcHVuZHNoLmdpdGh1Yi5pby9wb3N0cy8zZTRiLw==" title="https://ppundsh.github.io/posts/3e4b/">https://ppundsh.github.io/posts/3e4b/<i class="fa fa-external-link"></i></span></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/blog/" rel="tag"># blog</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/20200328/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#環境架設"><span class="nav-number">1.</span> <span class="nav-text">環境架設</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部屬到github"><span class="nav-number">2.</span> <span class="nav-text">部屬到github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#遇到的問題"><span class="nav-number">3.</span> <span class="nav-text">遇到的問題</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#TOC顯示有誤"><span class="nav-number">3.1.</span> <span class="nav-text">TOC顯示有誤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#首頁文章顯示正常，文章內全空白"><span class="nav-number">3.2.</span> <span class="nav-text">首頁文章顯示正常，文章內全空白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-無ssh認證"><span class="nav-number">3.3.</span> <span class="nav-text">git 無ssh認證</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-image-asset圖片顯示有誤"><span class="nav-number">3.4.</span> <span class="nav-text">hexo image asset圖片顯示有誤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用套件"><span class="nav-number">4.</span> <span class="nav-text">使用套件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hot-reload"><span class="nav-number">4.1.</span> <span class="nav-text">hot reload</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">kevinyay945</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">標籤</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kevinyay945</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
