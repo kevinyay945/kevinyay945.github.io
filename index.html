@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"kevinyay945.github.io","root":"/","scheme":"Pisces","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"kevinyay945.github.io","root":"/","scheme":"Pisces","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -149,6 +149,87 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200324/build-hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kevinyay945">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小小工程師的第二個腦">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/20200324/build-hexo/" class="post-title-link" itemprop="url">build hexo</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-03-24 16:04:51" itemprop="dateCreated datePublished" datetime="2020-03-24T16:04:51+08:00">2020-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2020-03-25 16:04:51" itemprop="dateModified" datetime="2020-03-25T16:04:51+08:00">2020-03-25</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>這是在建立這個blog的時候遇到的問題，在這邊記錄下來，怕之後忘記<br>使用環境: window 10</p>
+<h1 id="環境架設"><a href="#環境架設" class="headerlink" title="環境架設"></a>環境架設</h1><ul>
+<li>安裝node.js(<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuLw==" title="https://nodejs.org/en/">https://nodejs.org/en/<i class="fa fa-external-link"></i></span>)<ul>
+<li>建議安裝LTS版本，比較穩定</li>
+</ul>
+</li>
+<li>安裝git(<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">https://git-scm.com/<i class="fa fa-external-link"></i></span>)<ul>
+<li>建議安裝時全部都照預設值安裝，比較不會有問題</li>
+<li>在你希望的資料夾中執行以下命令(在你想要存放hexo的資料夾按下shift並按下右鍵，選取cmd或是powershell)<br>  ps: 以下的blog是資料夾名稱，可以改成任何你想要的名字  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+  這時進入localhost:4000，就可以看到你的blog了</li></ul></li></ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/20200324/build-hexo/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200328/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -219,7 +300,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200324/build-hexo/">
+    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200329/swagger-express/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -233,7 +314,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/20200324/build-hexo/" class="post-title-link" itemprop="url">build hexo</a>
+            <a href="/20200329/swagger-express/" class="post-title-link" itemprop="url">swagger express</a>
         </h2>
 
         <div class="post-meta">
@@ -243,15 +324,8 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2020-03-24 16:04:51" itemprop="dateCreated datePublished" datetime="2020-03-24T16:04:51+08:00">2020-03-24</time>
+              <time title="創建時間：2020-03-29 12:00:48" itemprop="dateCreated datePublished" datetime="2020-03-29T12:00:48+08:00">2020-03-29</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-03-25 16:04:51" itemprop="dateModified" datetime="2020-03-25T16:04:51+08:00">2020-03-25</time>
-              </span>
 
           
 
@@ -264,16 +338,189 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>這是在建立這個blog的時候遇到的問題，在這邊記錄下來，怕之後忘記<br>使用環境: window 10</p>
-<h1 id="環境架設"><a href="#環境架設" class="headerlink" title="環境架設"></a>環境架設</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/20200324/build-hexo/#more" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+          <h1 id="目標"><a href="#目標" class="headerlink" title="目標"></a>目標</h1><p>希望可以在建立express後端的api的同時，新建swagger的define.yaml，並提供前端swagger的瀏覽畫面</p>
+<h1 id="環境"><a href="#環境" class="headerlink" title="環境"></a>環境</h1><p>windows 10<br>sublime text 3<br>express</p>
+<h1 id="需要套件"><a href="#需要套件" class="headerlink" title="需要套件"></a>需要套件</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200418/eslint-express/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kevinyay945">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小小工程師的第二個腦">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/20200418/eslint-express/" class="post-title-link" itemprop="url">eslint-express</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-04-18 14:16:36" itemprop="dateCreated datePublished" datetime="2020-04-18T14:16:36+08:00">2020-04-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="將express加入eslint"><a href="#將express加入eslint" class="headerlink" title="將express加入eslint"></a>將express加入eslint</h1><p>使用IDE<br>sublime<br>參考網址<br><span class="exturl" data-url="aHR0cHM6Ly9zZWdtZW50ZmF1bHQuY29tL2EvMTE5MDAwMDAxMTQ5NzgxMg==" title="https://segmentfault.com/a/1190000011497812">https://segmentfault.com/a/1190000011497812<i class="fa fa-external-link"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200418/express-async/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kevinyay945">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小小工程師的第二個腦">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/20200418/express-async/" class="post-title-link" itemprop="url">express-async</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-04-18 20:45:07" itemprop="dateCreated datePublished" datetime="2020-04-18T20:45:07+08:00">2020-04-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="讓express能支援async並可以正常取得錯誤訊息"><a href="#讓express能支援async並可以正常取得錯誤訊息" class="headerlink" title="讓express能支援async並可以正常取得錯誤訊息"></a>讓express能支援async並可以正常取得錯誤訊息</h1><p><span class="exturl" data-url="aHR0cHM6Ly9jb2RlcnR3LmNvbS8lRTUlODklOEQlRTclQUIlQUYlRTklOTYlOEIlRTclOTklQkMvMjI5NDc2Lw==" title="https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/229476/">https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/229476/<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly96ZWxsd2suY29tL2Jsb2cvYXN5bmMtYXdhaXQtZXhwcmVzcy8=" title="https://zellwk.com/blog/async-await-express/">https://zellwk.com/blog/async-await-express/<i class="fa fa-external-link"></i></span><br>這兩種方法則一都可以</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200426/useful-lodash-method/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kevinyay945">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小小工程師的第二個腦">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/20200426/useful-lodash-method/" class="post-title-link" itemprop="url">useful-lodash-method</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-04-26 10:28:36" itemprop="dateCreated datePublished" datetime="2020-04-26T10:28:36+08:00">2020-04-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="好用的lodash-method-筆記"><a href="#好用的lodash-method-筆記" class="headerlink" title="好用的lodash method 筆記"></a>好用的lodash method 筆記</h1><h2 id="安裝Lodash"><a href="#安裝Lodash" class="headerlink" title="安裝Lodash"></a>安裝Lodash</h2><p><span class="exturl" data-url="aHR0cHM6Ly9sb2Rhc2guY29tLw==" title="https://lodash.com/">官網<i class="fa fa-external-link"></i></span></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save lodash</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Load the full build.</span></span><br><span class="line"><span class="keyword">const</span> _ = <span class="built_in">require</span>(<span class="string">'lodash'</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="pick"><a href="#pick" class="headerlink" title="pick"></a>pick</h2><p>req.body<br>{<br>    ‘id’: ‘001’,<br>    ‘name’: ‘John’,<br>    ‘email’: ‘test@gmail.com’<br>}</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user = _.pick(req.body,[<span class="string">'id'</span>,<span class="string">'name'</span>])</span><br></pre></td></tr></table></figure>
+<p>user<br>{<br>    ‘id’: ‘001’,<br>    ‘name’: ‘John’<br>}</p>
+
       
     </div>
 
@@ -355,12 +602,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">標籤</span>
       </div>
   </nav>
@@ -393,8 +640,6 @@
   </span>
   <span class="author" itemprop="copyrightHolder">kevinyay945</span>
 </div>
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 強力驅動
-  </div>
 
         
 
@@ -411,6 +656,7 @@
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
