@@ -20,21 +20,23 @@
     var CONFIG = {"hostname":"kevinyay945.github.io","root":"/","scheme":"Pisces","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="在OS X中，常常會看到使用者會透過鍵盤開啟一個放大鏡，直接打上路徑或是軟體名，就可以直接開啟(找張圖) 現在，Windows也在最近提供一個擴充功能(powertoys)，讓大家也能直接使用這個功能 他除了之前提到的spotlight功能，他還提供了其它很實用的功能 Color Picker可以直接透過組合鍵取得畫面元素的色碼，並放進剪貼簿中 FancyZones可以將軟體的布局自定義成你想要的">
+  <meta name="description" content="工欲善其事，必先利其器，要學習開發網頁的第一步，就是要先有個用的順手的編輯器，而目前比較常見的就下面列的這幾種  Sublime VSCode Atom JetBrain系列 Vim Emcas…上面這些是我比較常看到的，但因為今天主要是就我有使用過的部分來做比較，因此今天主要會以介紹VSCode為主  先介紹一下今天的主角–VSCode介紹部分就交給維基百科吧，這邊就不多作介紹了身為一個主流的E">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows好用plugin-powertoys">
-<meta property="og:url" content="https://kevinyay945.github.io/20200905/windows-hotkey/index.html">
+<meta property="og:title" content="Code Editor介紹(上)">
+<meta property="og:url" content="https://kevinyay945.github.io/20200915/VSCode-1/index.html">
 <meta property="og:site_name" content="小小工程師的第二個腦">
-<meta property="og:description" content="在OS X中，常常會看到使用者會透過鍵盤開啟一個放大鏡，直接打上路徑或是軟體名，就可以直接開啟(找張圖) 現在，Windows也在最近提供一個擴充功能(powertoys)，讓大家也能直接使用這個功能 他除了之前提到的spotlight功能，他還提供了其它很實用的功能 Color Picker可以直接透過組合鍵取得畫面元素的色碼，並放進剪貼簿中 FancyZones可以將軟體的布局自定義成你想要的">
+<meta property="og:description" content="工欲善其事，必先利其器，要學習開發網頁的第一步，就是要先有個用的順手的編輯器，而目前比較常見的就下面列的這幾種  Sublime VSCode Atom JetBrain系列 Vim Emcas…上面這些是我比較常看到的，但因為今天主要是就我有使用過的部分來做比較，因此今天主要會以介紹VSCode為主  先介紹一下今天的主角–VSCode介紹部分就交給維基百科吧，這邊就不多作介紹了身為一個主流的E">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2020-09-05T07:21:30.000Z">
-<meta property="article:modified_time" content="2020-09-05T07:21:30.000Z">
+<meta property="og:image" content="https://1.bp.blogspot.com/-PGV2DVNqsZE/XdAvsp85wVI/AAAAAAAAALg/hsQnDUFrdM0V_sxNUzNZqCCYQ_pucWK9wCLcBGAsYHQ/s1600/vs.PNG">
+<meta property="og:image" content="https://ithelp.ithome.com.tw/upload/images/20200915/20113505Xoj2O0BJqM.png">
+<meta property="og:image" content="https://ithelp.ithome.com.tw/upload/images/20200915/20113505IXdF4FEQIY.png">
+<meta property="article:published_time" content="2020-09-15T14:33:00.000Z">
+<meta property="article:modified_time" content="2020-09-15T14:33:00.000Z">
 <meta property="article:author" content="kevinyay945">
-<meta property="article:tag" content="Windows">
-<meta property="article:tag" content="Hot-key">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1.bp.blogspot.com/-PGV2DVNqsZE/XdAvsp85wVI/AAAAAAAAALg/hsQnDUFrdM0V_sxNUzNZqCCYQ_pucWK9wCLcBGAsYHQ/s1600/vs.PNG">
 
-<link rel="canonical" href="https://kevinyay945.github.io/20200905/windows-hotkey/">
+<link rel="canonical" href="https://kevinyay945.github.io/20200915/VSCode-1/">
 
 
 <script id="page-configurations">
@@ -47,7 +49,7 @@
   };
 </script>
 
-  <title>Windows好用plugin-powertoys | 小小工程師的第二個腦</title>
+  <title>Code Editor介紹(上) | 小小工程師的第二個腦</title>
   
 
 
@@ -155,7 +157,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200905/windows-hotkey/">
+    <link itemprop="mainEntityOfPage" href="https://kevinyay945.github.io/20200915/VSCode-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -168,7 +170,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Windows好用plugin-powertoys
+          Code Editor介紹(上)
         </h1>
 
         <div class="post-meta">
@@ -178,7 +180,7 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2020-09-05 15:21:30" itemprop="dateCreated datePublished" datetime="2020-09-05T15:21:30+08:00">2020-09-05</time>
+              <time title="創建時間：2020-09-15 22:33:00" itemprop="dateCreated datePublished" datetime="2020-09-15T22:33:00+08:00">2020-09-15</time>
             </span>
 
           
@@ -192,31 +194,47 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>在OS X中，常常會看到使用者會透過鍵盤開啟一個放大鏡，直接打上路徑或是軟體名，就可以直接開啟(找張圖)</p>
-<p>現在，Windows也在最近提供一個擴充功能(powertoys)，讓大家也能直接使用這個功能</p>
-<p>他除了之前提到的spotlight功能，他還提供了其它很實用的功能</p>
-<h2 id="Color-Picker"><a href="#Color-Picker" class="headerlink" title="Color Picker"></a>Color Picker</h2><p>可以直接透過組合鍵取得畫面元素的色碼，並放進剪貼簿中</p>
-<h2 id="FancyZones"><a href="#FancyZones" class="headerlink" title="FancyZones"></a>FancyZones</h2><p>可以將軟體的布局自定義成你想要的位置，如果你有超寬螢幕時超級推薦!!!</p>
-<h2 id="File-explorer-Preview"><a href="#File-explorer-Preview" class="headerlink" title="File explorer Preview"></a>File explorer Preview</h2><p>可以讓你在檔案總管中除了原本可以預覽的圖片或是影片之外<br>在安裝完後，新增了</p>
+        <p>工欲善其事，必先利其器，要學習開發網頁的第一步，就是要先有個用的順手的編輯器，而目前比較常見的就下面列的這幾種</p>
 <ol>
-<li>svg (小圖示跟預覽畫面都可以)</li>
-<li>markdown預覽<br>從此，我再也不用透過web來預覽svg了，太棒了!!!</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuc3VibGltZXRleHQuY29tLw==" title="https://www.sublimetext.com/">Sublime<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20v" title="https://code.visualstudio.com/">VSCode<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9hdG9tLmlvLw==" title="https://atom.io/">Atom<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuamV0YnJhaW5zLmNvbS8=" title="https://www.jetbrains.com/">JetBrain系列<i class="fa fa-external-link"></i></span></li>
+<li>Vim</li>
+<li>Emcas<br>…<br>上面這些是我比較常看到的，但因為今天主要是就我有使用過的部分來做比較，因此今天主要會以介紹VSCode為主</li>
 </ol>
-<h2 id="Image-Resizer"><a href="#Image-Resizer" class="headerlink" title="Image Resizer"></a>Image Resizer</h2><p>可以透過滑鼠右鍵的選單直接將圖片縮小或放大</p>
-<h2 id="Keyboard-Manager"><a href="#Keyboard-Manager" class="headerlink" title="Keyboard Manager"></a>Keyboard Manager</h2><p>可以將你的鍵盤從新remap， 而且還支援個別程式自定義<br>如果不是重度需求者，基本上可以取代autohotkey了</p>
-<h2 id="PowerRename"><a href="#PowerRename" class="headerlink" title="PowerRename"></a>PowerRename</h2><p>在Windows上，如果要大量重新命名檔案，通常只能透過提示命令字元下指令完成<br>但在這個工具上，他提供你圖形化介面修改，另外，還可以透過正規表達式來進行修改的動作，功能十分強大!!</p>
-<h2 id="Powertoys-Run-重點"><a href="#Powertoys-Run-重點" class="headerlink" title="Powertoys Run(重點)"></a>Powertoys Run(<strong>重點</strong>)</h2><p>在任何程式開啟的狀態，按下alt+space，就可以直接開啟搜尋工具，打字即可開啟需要的服務<br>目前支援的指令有</p>
-<ol>
-<li>網址</li>
-<li>應用程式</li>
-<li>資料夾/檔案</li>
-<li>cmd直接運行(“&gt;ipconfig” 就可以執行ipconfig)</li>
-<li>開啟已開啟的應用程式</li>
-</ol>
-<p>網址，應用程式這兩個比較單純，打上你要的，看到你的目標，enter案下去就對了</p>
-<p>資料夾/檔案這點要補充一下<br>當你找到你要開啟的資料夾時，如果按下ctrl+shift+c，就可以直接透過cmd直接開啟這個資料夾，在需要下指令時非常好用</p>
-<p>開啟已開啟的應用成，因為它的優先順序問題，如果在搜尋頁面打上應用程式名，已經開啟的選項會放在選單的最下方，直接按下方向鍵上再選擇即可</p>
-<h2 id="Shortcut-Guide"><a href="#Shortcut-Guide" class="headerlink" title="Shortcut Guide"></a>Shortcut Guide</h2><p>如果忘記快捷鍵，除了可以打開設定之外，還可以透過長按win key，他會將目前有的快捷鍵都顯示在螢幕中，大家可以自己玩玩看喔!!</p>
+<p>先介紹一下今天的主角–VSCode<br><img src="https://1.bp.blogspot.com/-PGV2DVNqsZE/XdAvsp85wVI/AAAAAAAAALg/hsQnDUFrdM0V_sxNUzNZqCCYQ_pucWK9wCLcBGAsYHQ/s1600/vs.PNG" alt><br>介紹部分就交給維基百科吧，這邊就不多作介紹了<br>身為一個主流的Editor，基本上的上色功能是一定有的<br><img src="https://ithelp.ithome.com.tw/upload/images/20200915/20113505Xoj2O0BJqM.png" alt="https://ithelp.ithome.com.tw/upload/images/20200915/20113505Xoj2O0BJqM.png"><br>這邊想介紹我比較常用的Plugin，讓在打code的時候可以越打越開心!!<br>首先<br>主題部份我是使用<span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPXpodWFuZ3RvbmdmYS5NYXRlcmlhbC10aGVtZQ==" title="https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme">One dark pro<i class="fa fa-external-link"></i></span><br>但主題部分我覺得找一個看得順眼的最重要，在vscode中有很多的主題供大家選擇<br><img src="https://ithelp.ithome.com.tw/upload/images/20200915/20113505IXdF4FEQIY.png" alt="https://ithelp.ithome.com.tw/upload/images/20200915/20113505IXdF4FEQIY.png"><br>接下來強烈推薦先安裝以下這個套件<br><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPW1zLXZzY29kZS5zdWJsaW1lLWtleWJpbmRpbmdz" title="https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings">Sublime Text Keymap and Settings Importer<i class="fa fa-external-link"></i></span><br>這個可以幫你把原本在sublime中的設定檔以及sublime的熱鍵複製過來，很好用的!!<br>明天會介紹的熱鍵會需要這個這個套件的</p>
+<p>下面這些是我目前比較常使用到的套件</p>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPXBhdGJlbmF0YXIuYWR2YW5jZWQtbmV3LWZpbGU=" title="https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file">Advanced-new-file<i class="fa fa-external-link"></i></span><ul>
+<li>可以透過鍵盤直接新增檔案，手就可以不用離開鍵盤了</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPWZvcm11bGFoZW5kcnkuYXV0by1yZW5hbWUtdGFn" title="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag<i class="fa fa-external-link"></i></span><ul>
+<li>修改tag時修改開頭的tag，尾巴的tag也會一起修正</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPWVhbW9kaW8uZ2l0bGVucw==" title="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens — Git supercharged<i class="fa fa-external-link"></i></span><ul>
+<li>強大的git套件，還可以透過圖形化介面來修改內部的設定檔</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPXNweXdoZXJlLmd1aWRlcw==" title="https://marketplace.visualstudio.com/items?itemName=spywhere.guides">Guides<i class="fa fa-external-link"></i></span><ul>
+<li>會幫你的縮排畫個線，讓你比較好對其</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPWVzYmVucC5wcmV0dGllci12c2NvZGU=" title="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier - Code formatter<i class="fa fa-external-link"></i></span><ul>
+<li>幫你自動排版的好用工具，必裝!!</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPVdha2FUaW1lLnZzY29kZS13YWthdGltZQ==" title="https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime">WakaTime<i class="fa fa-external-link"></i></span><ul>
+<li>免費計時你打code的歷程以及時間，還可以結合git紀錄，了解每個commit花了多久時間</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9tYXJrZXRwbGFjZS52aXN1YWxzdHVkaW8uY29tL2l0ZW1zP2l0ZW1OYW1lPW9jdHJlZi52ZXR1cg==" title="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur<i class="fa fa-external-link"></i></span><ul>
+<li>開發vue必裝</li>
+</ul>
+</li>
+</ul>
 
     </div>
 
@@ -225,10 +243,6 @@
     
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Windows/" rel="tag"># Windows</a>
-              <a href="/tags/Hot-key/" rel="tag"># Hot-key</a>
-          </div>
 
         
 
@@ -236,13 +250,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/20200905/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/20200905/windows-hotkey/" rel="prev" title="Windows好用plugin-powertoys">
+      <i class="fa fa-chevron-left"></i> Windows好用plugin-powertoys
     </a></div>
-      <div class="post-nav-item">
-    <a href="/20200915/VSCode-1/" rel="next" title="Code Editor介紹(上)">
-      Code Editor介紹(上) <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -302,7 +313,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Color-Picker"><span class="nav-number">1.</span> <span class="nav-text">Color Picker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FancyZones"><span class="nav-number">2.</span> <span class="nav-text">FancyZones</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#File-explorer-Preview"><span class="nav-number">3.</span> <span class="nav-text">File explorer Preview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Resizer"><span class="nav-number">4.</span> <span class="nav-text">Image Resizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Keyboard-Manager"><span class="nav-number">5.</span> <span class="nav-text">Keyboard Manager</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PowerRename"><span class="nav-number">6.</span> <span class="nav-text">PowerRename</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Powertoys-Run-重點"><span class="nav-number">7.</span> <span class="nav-text">Powertoys Run(重點)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shortcut-Guide"><span class="nav-number">8.</span> <span class="nav-text">Shortcut Guide</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
